@@ -1,38 +1,68 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap');
+* { 
+  margin:0; }
+
+.Btn{
+  background:#fcaf3b;
+  width: 10em;
+  height: 3em;
+  border-color: #fcaf3b;
+  color: pink;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.App {  text-align: center;
+        background-color: black;
+}
+
+.App-logo {  height: 20vmin;  pointer-events: none;}
+
+.App-banner{  width: 100%; }
+
+.container{  position: relative; }
+.centered{  position: absolute;  top: 85%;  bottom: 15%;left: 21%; right: 21%; color:#fcaf3b;
+    font-family: Poppins;  font-size: 70px;font-weight: 500; line-height: 1em;}
+ 
+
+
+.Benefits{
   text-align: center;
+  padding: 100px;
+  color: #fcaf3b;
+  font-family: Poppins;
+  font-size: 20px;
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.square{
+  height: 550px;
+  width: 75%;
+  margin: auto;
+  border: 10px;
+  background-color: white;
+ 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.squareright{
+  padding-top: 10%;
+  background-color: white;
+  font-size: x-large;
+  height: 550px;
+  text-align: center;
+  font-family: Poppins;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.full{
+  background-color: black;
 }
-
-.App-link {
-  color: #61dafb;
+.footer{
+  background-color: black;
+  font-family: Poppins;
+  color: #fcaf3b;
+  padding: 5%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form{
+  background-color: black;
+  color: #fcaf3b;
+  padding: 10%;
 }
