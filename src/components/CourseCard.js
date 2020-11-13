@@ -6,14 +6,14 @@ function CourseCard () {
         <div className="full">
         <Container className="square">
             <Row>
-                <Col>
+                <Col sm>
                     <img src={coursecardimg} alt="Curs Fitness Pentru Incepatori"/>
                 </Col>
-                <Col className="squareright">
+                <Col sm className="squareright">
                     <h1>Curs "Fitness pentru începători"</h1><br/>
                     <p>Data: 20.11.2020</p><br/>
-                    <p>Cost: 100 RON</p><br/>
-                    <Button>Hey, apasa acili sea</Button>
+                    <p>Cost: 100 RON</p><br/><br/>
+                    <Button>Înscrie-te!</Button>
                 </Col>
             </Row>
         </Container></div>

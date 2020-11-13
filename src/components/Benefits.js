@@ -15,16 +15,19 @@ function Benefits(){
                     <FontAwesomeIcon icon={faUserGraduate} size="5x" color="#fcaf3b" />
                     <br/>
                     Cursuri create de un antrenor calificat
+                    <br/>
                 </Col>
                 <Col sm>
                     <FontAwesomeIcon icon={faHandshake} size="5x" color="#fcaf3b"/>
                     <br/>
                     Garanție 100% de funcționare a programelor noastre
+                    <br/>
                 </Col>
                 <Col sm>
                     <FontAwesomeIcon icon={faTrophy} size="5x" color="#fcaf3b"/>
                     <br/>
                     O întreagă echipa de profesioniști în spate
+                    <br/>
                 </Col>
             </Row>
         </Container>

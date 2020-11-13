@@ -3,11 +3,9 @@
   margin:0; }
 
 .Btn{
-  background:#fcaf3b;
   width: 10em;
   height: 3em;
   border-color: #fcaf3b;
-  color: pink;
   font-family: Poppins;
   font-size: 18px;
   font-weight: 600;
@@ -21,12 +19,24 @@
 
 .App-banner{  width: 100%; }
 
-.container{  position: relative; }
-.centered{  position: absolute;  top: 85%;  bottom: 15%;left: 21%; right: 21%; color:#fcaf3b;
-    font-family: Poppins;  font-size: 70px;font-weight: 500; line-height: 1em;}
- 
-
-
+.container
+{  
+  position: relative; 
+  text-align: center;
+}
+.centered{  
+  position: absolute;  top: 85%;  bottom: 15%;left: 21%; right: 21%; color:#fcaf3b;
+    font-family: Poppins;  font-size: 70px;font-weight: 500; line-height: 1.3em;}
+@media (max-width: 768px){
+  .centered{ 
+      position:sticky !important;
+      font-size: x-large;
+  }}
+.centered2{
+  position: absolute;
+  left: 21%; 
+  right: 21%;
+}
 .Benefits{
   text-align: center;
   padding: 100px;
@@ -34,6 +44,12 @@
   font-family: Poppins;
   font-size: 20px;
   background-color: black;
+}
+@media (max-width:768px){
+  .Benefits{
+    font-size: medium;
+    line-height: 2em;
+  }
 }
 
 .square{
@@ -66,3 +82,4 @@
   color: #fcaf3b;
   padding: 10%;
 }
+
