@@ -18,23 +18,24 @@ function MyVerticallyCenteredModal(props) {
          </Modal.Header>
          <Modal.Body>
          <h4 style={{textAlign:'center'}}>Înscriere</h4>
-         <Form>
+         <Form name="inscriere" method="post">
+         <input type="hidden" name="inscriere" value="contact" />
+         <Form.Row>
+         <Form.Group as={Col} controlId="formGridName">
+         <Form.Label>Nume Prenume</Form.Label>
+         <Form.Control name="name" type="text" placeholder="Popescu Ion" />
+         </Form.Group>
+         </Form.Row>
          <Form.Row>
          <Form.Group as={Col} controlId="formGridEmail">
          <Form.Label>Adresa Email</Form.Label>
-         <Form.Control type="email" placeholder="Adresa de email" />
-         </Form.Group>
-         </Form.Row>
-         <Form.Row>
-         <Form.Group as={Col} controlId="formGridPassword">
-         <Form.Label>Parola</Form.Label>
-         <Form.Control type="password" placeholder="Parola" />
+         <Form.Control name="email" type="email" placeholder="popescu.ion@gmail.com" />
          </Form.Group>
          </Form.Row>
           <Form.Row>
-         <Form.Group as={Col} controlId="formGridZip">
-         <Form.Label>Nr de telefon</Form.Label>
-         <Form.Control />
+         <Form.Group as={Col} controlId="formGridPhoneNumber">
+         <Form.Label>Număr de telefon</Form.Label>
+         <Form.Control name="phonenumber" type="tel" /> 
          </Form.Group>
          </Form.Row>
 

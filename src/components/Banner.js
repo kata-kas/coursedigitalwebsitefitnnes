@@ -11,7 +11,7 @@ function Banner(){
           Noi te putem ajuta să fii în formă maximă! 
           <br></br> </div>
           <div className="centered2">
-          <Button variant="warning" ButtonVariant="outline-dark" size="lg" className="Btn">
+          <Button href="/despre-noi" variant="warning" ButtonVariant="outline-dark" size="lg" className="Btn">
           AFLĂ CUM!
           </Button>
          </div>

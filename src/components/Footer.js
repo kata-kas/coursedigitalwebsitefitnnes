@@ -25,7 +25,7 @@ function Footer(){
                 <Col></Col>  
             </Row>
             <Row>
-                <Col><p>ANPC</p></Col>
+                <Col><a href="https://anpc.ro/" target="blank" style={{textDecoration:'none', color:'#fcaf3b'}}>ANPC</a></Col>
                 <Col></Col>
             </Row>
         </Container></div>
