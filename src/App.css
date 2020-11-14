@@ -25,7 +25,7 @@
   text-align: center;
 }
 .centered{  
-  position: absolute;  top: 100%;  bottom: 0%;left: 21%; right: 21%; color:#fcaf3b;
+  position: absolute;  top: 110%;  bottom: -10%;left: 21%; right: 21%; color:#fcaf3b;
     font-family: Poppins;  font-size: 70px;font-weight: 500; line-height: 1.3em;}
 @media (max-width: 768px){
   .centered{ 

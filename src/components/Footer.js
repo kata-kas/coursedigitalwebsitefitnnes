@@ -9,7 +9,7 @@ function Footer(){
         <div style={{backgroundColor:'black'}}>
         <Container className="footer">
             <Row>
-                <Col><p>Termenii și Condițiile</p></Col>
+                <Col><Link to="/termeni-si-conditii" style={{ textDecoration: 'none', color:"#fcaf3b" }}>Termenii și Condițiile</Link></Col>
                 <Col> <a href="https://www.facebook.com/NOSSLifestyle" target="blank" style={{textDecoration:'none'}}>
                     <FontAwesomeIcon icon={faFacebook} size="2x" color="#fcaf3b"/></a> &nbsp; &nbsp;
 
