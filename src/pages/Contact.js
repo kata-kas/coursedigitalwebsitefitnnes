@@ -5,29 +5,29 @@ import {Form, Col, Button} from 'react-bootstrap'
 
 function Contact() {
   return (
-    <div>
+    <div style={{backgroundColor:'black'}}>
     <Header/>
     <Form className="form">
   <Form.Row>
     <Form.Group as={Col} controlId="formGridEmail">
       <Form.Label>Adresa Email</Form.Label>
-      <Form.Control type="email" placeholder="Enter email" />
+      <Form.Control type="email" placeholder="Adresa de email" />
     </Form.Group>
 
     <Form.Group as={Col} controlId="formGridPassword">
       <Form.Label>Parola</Form.Label>
-      <Form.Control type="password" placeholder="Password" />
+      <Form.Control type="password" placeholder="Parola" />
     </Form.Group>
   </Form.Row>
 
   <Form.Group controlId="formGridAddress1">
     <Form.Label>Adresa</Form.Label>
-    <Form.Control placeholder="1234 Main St" />
+    <Form.Control placeholder="Strada și numărul" />
   </Form.Group>
 
   <Form.Group controlId="formGridAddress2">
     <Form.Label>Adresa 2</Form.Label>
-    <Form.Control placeholder="Apartment, studio, or floor" />
+    <Form.Control placeholder="Bloc, apartament" />
   </Form.Group>
 
   <Form.Row>
@@ -38,23 +38,20 @@ function Contact() {
 
     <Form.Group as={Col} controlId="formGridState">
       <Form.Label>Județ</Form.Label>
-      <Form.Control as="select" defaultValue="Choose...">
-        <option>Alege...</option>
-        <option>...</option>
-      </Form.Control>
+      <Form.Control />
     </Form.Group>
 
     <Form.Group as={Col} controlId="formGridZip">
-      <Form.Label>Număr de telefon</Form.Label>
+      <Form.Label>Nr de telefon</Form.Label>
       <Form.Control />
     </Form.Group>
   </Form.Row>
 
   <Form.Group id="formGridCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
+    <Form.Check type="checkbox" label="Sunt de acord cu termenii și condițiile " />
   </Form.Group>
 
-  <Button variant="primary" type="submit">
+  <Button style={{marginLeft:'40%', marginRight:'20%'}}variant="warning" type="submit">
     Trimite
   </Button>
 </Form>
