@@ -1,6 +1,7 @@
 import '../App.css';
 import banner from '../assets/banner.jpg';
 import Button from 'react-bootstrap/Button';
+import {Link} from 'react-router-dom';
 
 function Banner(){
     return (
@@ -11,9 +12,10 @@ function Banner(){
           Noi te putem ajuta să fii în formă maximă! 
           <br></br> </div>
           <div className="centered2">
-          <Button href="/despre-noi" variant="warning" ButtonVariant="outline-dark" size="lg" className="Btn">
+          <Link to="/despre-noi">
+          <Button variant="warning" ButtonVariant="outline-dark" size="lg" className="Btn">
           AFLĂ CUM!
-          </Button>
+          </Button></Link>
          </div>
       </div>
       </div>
