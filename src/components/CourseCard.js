@@ -18,8 +18,8 @@ function MyVerticallyCenteredModal(props) {
          </Modal.Header>
          <Modal.Body>
          <h4 style={{textAlign:'center'}}>Înscriere</h4>
-         <Form name="inscriere" method="post">
-         <input type="hidden" name="inscriere" value="contact" />
+         <Form name="inscriere" method="post" data-netlify="true">
+         <input type="hidden" name="inscriere" value="inscriere" />
          <Form.Row>
          <Form.Group as={Col} controlId="formGridName">
          <Form.Label>Nume Prenume</Form.Label>

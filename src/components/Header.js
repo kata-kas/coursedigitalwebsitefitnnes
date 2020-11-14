@@ -6,9 +6,9 @@ import {Navbar, Nav} from 'react-bootstrap';
 function Header() {
     return(
         <div className="App">
-        <header className="App-header">
+        <header className="App-header" >
         <Link to="/" >
-        <img src={logo} className="App-logo" alt="NOSS logo" />
+        <img src={logo} style={{marginTop: '15px'}} className="App-logo" alt="NOSS logo" />
         </Link>
         <Navbar style={{backgroundColor:'orange'}} expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
