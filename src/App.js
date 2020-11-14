@@ -3,6 +3,8 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import DespreNoi from './pages/DespreNoi';
 import Tsc from './pages/Tsc';
+import CursFpi from "./pages/CursFpi";
+import Inscriere from "./pages/Inscriere";
 
 export default function App() {
   // return <AnimationRevealPage disabled></AnimationRevealPage>;
@@ -20,6 +22,12 @@ export default function App() {
         </Route>
         <Route path="/termeni-si-conditii">
             <Tsc/>
+        </Route>
+        <Route path="/curs-fitness-pentru-incepatori">
+            <CursFpi/>
+        </Route>
+        <Route path="/inscriere">
+            <Inscriere/>
         </Route>
       </Switch>
     </Router>
