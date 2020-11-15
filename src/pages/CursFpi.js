@@ -15,7 +15,7 @@ function MyVerticallyCenteredModal(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Curs "Fitness pentru începători"
+            Curs "Fitness pentru un stil de viață sănătos"
          </Modal.Title>
          </Modal.Header>
          <Modal.Body>
@@ -60,11 +60,11 @@ function CursFpi(){
         <div style={{backgroundColor:'black'}}>
             <Header/>
             <Card border="warning" style={{ width: 'auto', marginLeft:'10%', marginRight:'10%', marginTop:'2%' }}>
-        <Card.Img variant="top" src={coursecardimg} alt="Curs Fittnes pentru începători" 
+        <Card.Img variant="top" src={coursecardimg} alt="Curs Fittnes pentru un stil de viață sănătos" 
         style={{width:"100%", height:'80%'}}
         />
         <Card.Title style={{textAlign: 'center', fontFamily:'Poppins', marginTop:'1%'
-        }}><strong> Curs "Fitness pentru începători"</strong></Card.Title>
+        }}><strong> Curs "Fitness pentru un stil de viață sănătos"</strong></Card.Title>
         <Card.Text style={{textAlign: 'center', fontFamily:'Poppins', marginTop:'1%'
         }}>
         <p>💪🏻 NOSS Lifestyle un concept care promovează un stil de viață sănătos și echilibrat!</p>

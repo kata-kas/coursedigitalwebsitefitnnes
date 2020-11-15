@@ -8,10 +8,10 @@ function CourseCard () {
     return (
         <div className="full">
         <Card border="warning" style={{ width: 'auto', marginLeft:'20%', marginRight:'20%' }}>
-        <Card.Img variant="top" src={coursecardimg} alt="Curs Fittnes pentru începători" />
+        <Card.Img variant="top" src={coursecardimg} alt="Curs Fittnes pentru un stil de viață sănătos" />
         <Card.Body>
         <Card.Title style={{textAlign: 'left', fontFamily:'Poppins',
-        margin:'10%'}}><strong> Curs "Fitness pentru începători"</strong></Card.Title>
+        margin:'10%'}}><strong> Curs "Fitness pentru un stil de viață sănătos"</strong></Card.Title>
         <Card.Text style={{textAlign: 'left', lineHeight:'10px', margin:'10%'}}>
                     <p> <strong>20 Noiembrie 2020</strong></p><br/>
                     <p> 30 zile</p>
