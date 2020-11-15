@@ -8,7 +8,7 @@ function DespreNoi(){
         <div style={{ backgroundColor:'black', color:'#fcaf3b', fontFamily:'Poppins', 
         margin: '15%'
     }}>
-        <h1>NOSS – Nutriție, Odihnă, Sport, Suplimente</h1>
+        <h1>NOSS – Nutriție 🍽️, Odihnă 💤, Sport 🏋️, Suplimente ⚡</h1><br/>
         <h2>Este un program născut din dorința de a transformă modul în care oamenii privesc sportul, integrându-l în viață celor care l-au urmat.</h2>
         </div>
         <Footer/>

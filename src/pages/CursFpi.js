@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import {Card, Button, Modal, Form, Col} from 'react-bootstrap';
 import coursecardimg from '../assets/cardcourse.png';
 import React from 'react';
+import ReactPlayer from 'react-player';
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -64,7 +65,17 @@ function CursFpi(){
         />
         <Card.Title style={{textAlign: 'center', fontFamily:'Poppins', marginTop:'1%'
         }}><strong> Curs "Fitness pentru începători"</strong></Card.Title>
-        <Card.Text>
+        <Card.Text style={{textAlign: 'center', fontFamily:'Poppins', marginTop:'1%'
+        }}>
+        <p>💪🏻 NOSS Lifestyle un concept care promovează un stil de viață sănătos și echilibrat!</p>
+
+        <p>🎓 Mai mult, echipa : NOSS Lifestyle a pregătit un curs care vine în sprijinul dumneavoastră.</p>
+
+        <p>📝 Cursul cuprinde informații despre nutriție și exerciții fizice.
+        În concluzie dacă doriți să scăpați de kilogramele în plus acum este momentul.</p>
+        <div style={{margin:'auto'}}>
+        <ReactPlayer url='https://www.youtube.com/watch?v=NdaTY4ZoIzI' loop="true" playing="true" 
+        width="100%" height="400px"/></div>
         </Card.Text>
         <Card.Body>
         <div >
