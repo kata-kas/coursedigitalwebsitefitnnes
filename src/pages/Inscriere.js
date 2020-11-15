@@ -1,13 +1,13 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import NetlifyForm from 'react-ssg-netlify-forms'
-import {Link} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import {useState} from 'react';
 
-
 function Inscriere(){
+    let history=useHistory()
     const postSubmit = () => {
-        Link('/')}
+        history.push('/felicitari')}
         const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
     const [formValues, setFormValues] = useState({
       name: '',

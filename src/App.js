@@ -5,6 +5,7 @@ import DespreNoi from './pages/DespreNoi';
 import Tsc from './pages/Tsc';
 import CursFpi from "./pages/CursFpi";
 import Inscriere from "./pages/Inscriere";
+import Felicitari from "./pages/Felicitari";
 
 export default function App() {
   // return <AnimationRevealPage disabled></AnimationRevealPage>;
@@ -28,6 +29,9 @@ export default function App() {
         </Route>
         <Route path="/inscriere">
             <Inscriere/>
+        </Route>
+        <Route path="/felicitari">
+            <Felicitari/>
         </Route>
       </Switch>
     </Router>
