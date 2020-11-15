@@ -12,7 +12,7 @@ function Felicitari(){
          }}>
         <h1 >Felicitări! 🎉</h1>
 
-        <p>Te-ai înscris în cursul <strong>"Fitness pentru începători"</strong> 💪</p>
+        <p>Te-ai înscris în cursul <strong>"Fitness pentru un stil de viață sănătos"</strong> 💪</p>
 
         <p>Cursul se va ține pe aplicația <a href="https://telegram.org/" target="blank" style={{textDecoration:'none', color:'yellow'}} >Telegram</a>. Dacă nu ai cont pe această aplicație, te rugăm să îți creezi unul. 📲</p>
 
