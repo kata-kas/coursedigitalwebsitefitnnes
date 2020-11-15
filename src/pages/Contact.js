@@ -2,6 +2,7 @@ import '../App.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import {Form, Col, Button} from 'react-bootstrap'
+import {Link} from 'react-router-dom';
 
 function Contact() {
   return (
@@ -14,10 +15,6 @@ function Contact() {
       <Form.Control type="email" placeholder="Adresa de email" />
     </Form.Group>
 
-    <Form.Group as={Col} controlId="formGridPassword">
-      <Form.Label>Parola</Form.Label>
-      <Form.Control type="password" placeholder="Parola" />
-    </Form.Group>
   </Form.Row>
 
   <Form.Group controlId="formGridAddress1">
@@ -47,8 +44,8 @@ function Contact() {
     </Form.Group>
   </Form.Row>
 
-  <Form.Group id="formGridCheckbox">
-    <Form.Check type="checkbox" label="Sunt de acord cu termenii și condițiile " />
+  <Form.Group id="formGridCheckbox" style={{display:'block'}}>
+    <Form.Check type="checkbox" label="Sunt de acord cu " required/><Link to="/termeni-si-conditii">termenii și condițiile </Link>
   </Form.Group>
 
   <Button style={{marginLeft:'40%', marginRight:'20%'}}variant="warning" type="submit">
