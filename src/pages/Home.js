@@ -3,7 +3,6 @@ import Benefits from '../components/Benefits';
 import Header from '../components/Header';
 import CourseCard from '../components/CourseCard';
 import Footer from '../components/Footer';
-import clip from '../components/video.mp4';
 import {Link} from 'react-router-dom';
 import { motion } from 'framer-motion'
 
@@ -18,7 +17,7 @@ function Home() {
     transition={{ duration: 1 }}>
 
      <div className="App"><video autoPlay loop muted id="background-video">
-      <source src={clip} type='video/mp4' />
+      <source src='https://storage.googleapis.com/kreativio/video.mp4' type='video/mp4' />
     </video>
         <div className="Container" style={{height:'100vh'}}>
         <Header/>
