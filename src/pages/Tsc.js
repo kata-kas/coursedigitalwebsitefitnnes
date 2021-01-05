@@ -3,12 +3,12 @@ import Footer from '../components/Footer';
 
 function Tsc(){
     return(
-        <div style={{backgroundColor:'black'}}>
+        <div style={{backgroundColor:'rgb(29, 29, 29)'}}>
             <Header/>
             <div
             style={{
-                backgroundColor:'black', color: '#fcaf3b', fontFamily:'Poppins', 
-                textAlign:'left', margin: '10%', border: '1px solid #fcaf3b'
+                backgroundColor:'rgb(29, 29, 29)', color: '#CA2000', fontFamily:'Raleway', 
+                textAlign:'left', margin: '10%', border: '1px solid #CA2000'
             }}
             >
             <div style={{margin:'3%'}}>

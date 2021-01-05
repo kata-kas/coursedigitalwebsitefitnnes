@@ -57,15 +57,15 @@ function MyVerticallyCenteredModal(props) {
 function CursFpi(){
     const [modalShow, setModalShow] = React.useState(false);
     return(
-        <div style={{backgroundColor:'black'}}>
+        <div style={{backgroundColor:'rgb(29, 29, 29)'}}>
             <Header/>
             <Card border="warning" style={{ width: 'auto', marginLeft:'10%', marginRight:'10%', marginTop:'2%' }}>
         <Card.Img variant="top" src={coursecardimg} alt="Curs Fittnes pentru un stil de viață sănătos" 
         style={{width:"100%", height:'80%'}}
         />
-        <Card.Title style={{textAlign: 'center', fontFamily:'Poppins', marginTop:'1%'
+        <Card.Title style={{textAlign: 'center', fontFamily:'Raleway', marginTop:'1%'
         }}><strong> Curs "Fitness pentru un stil de viață sănătos"</strong></Card.Title>
-        <Card.Text style={{textAlign: 'center', fontFamily:'Poppins', marginTop:'1%'
+        <Card.Text style={{textAlign: 'center', fontFamily:'Raleway', marginTop:'1%'
         }}>
         <div style={{margin:'5%'}}>
         <p>💪🏻 NOSS Lifestyle un concept care promovează un stil de viață sănătos și echilibrat!</p>
@@ -89,7 +89,7 @@ function CursFpi(){
         <Card.Body>
         <div >
         <Button as={Col} variant="warning"
-        style={{color: 'black', fontFamily:'Poppins', fontSize:'20px',
+        style={{color: 'rgb(29, 29, 29)', fontFamily:'Raleway', fontSize:'20px',
        }}
          onClick={() => setModalShow(true)}>Mă înscriu acum</Button>
         <MyVerticallyCenteredModal

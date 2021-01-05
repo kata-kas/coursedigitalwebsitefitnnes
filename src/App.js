@@ -6,10 +6,18 @@ import Tsc from './pages/Tsc';
 import CursFpi from "./pages/CursFpi";
 import Inscriere from "./pages/Inscriere";
 import Felicitari from "./pages/Felicitari";
+import Plata from "./pages/Plata";
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+import { CartProvider } from 'use-shopping-cart';
+import './App.css'
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
 
 export default function App() {
   // return <AnimationRevealPage disabled></AnimationRevealPage>;
   return (
+    <Elements stripe={stripePromise}>
+    <CartProvider mode="checkout-session" stripe={stripePromise} currency="RON">
     <Router>
       <Switch>
         <Route path="/" exact>
@@ -33,7 +41,12 @@ export default function App() {
         <Route path="/felicitari">
             <Felicitari/>
         </Route>
+        <Router path="/cos">
+          <Plata/>
+        </Router>
       </Switch>
     </Router>
+    </CartProvider>
+    </Elements>
   );
 }

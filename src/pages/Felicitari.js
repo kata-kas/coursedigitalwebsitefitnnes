@@ -7,7 +7,7 @@ function Felicitari(){
         <div>
         <Header/>
         <div
-        style={{backgroundColor: 'black', fontFamily:'Poppins', color:'#fcaf3b',
+        style={{backgroundColor: 'rgb(29, 29, 29)', fontFamily:'Raleway', color:'#CA2000',
          padding:'10%', lineHeight:'15px'
          }}>
         <h1 >Felicitări! 🎉</h1>

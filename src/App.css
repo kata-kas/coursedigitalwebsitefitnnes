@@ -1,108 +1,66 @@
-/* devanagari */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2) format('woff2');
-  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* devanagari */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: local('Poppins Black'), local('Poppins-Black'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z11lFd2JQEl8qw.woff2) format('woff2');
-  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: local('Poppins Black'), local('Poppins-Black'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1JlFd2JQEl8qw.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: local('Poppins Black'), local('Poppins-Black'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5Z1xlFd2JQEk.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;800&display=swap');
 * { 
-  margin:0; }
-
+  margin:0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
 .Btn{
-  width: 10em;
-  height: 3em;
-  border-color: #fcaf3b;
-  font-family: Poppins;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-80%);
+  width: 150px;
+  height: 50px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 900;
   text-transform: uppercase;
+  text-align: center;
+  background-color: #CA2000;
+  color: white;
+  padding: 1%;
+  border-radius: 1%;
+  position: absolute;
 }
-.App {  text-align: center;
-        background-color: black;
-}
-
-.App-logo {  height: 25vmin; margin-bottom: 10%; }
+#background-video{
+  position: fixed;
+  z-index: -1;
+  object-fit: cover;
+  right: 0;
+  bottom: 0;
+  top: 0%;
+  width: 100%; 
+  min-height: 100%;
+  filter: brightness(20%);
+  }
+.App-logo {  height: 10vmin; margin-bottom: 10%; }
 
 .App-banner{  width: 100%; }
-
-.container
-{  
-  position: relative; 
-  text-align: center;
-}
 .centered{  
-  position: absolute;  top: 110%;  bottom: -10%;left: 21%; right: 21%; color:#fcaf3b;
-    font-family: Poppins;  font-size: 70px;font-weight: 500; line-height: 1.3em;}
-@media (max-width: 768px){
-  .centered{ 
-      position:sticky !important;
-      font-size: x-large;
-  }}
-.centered2{
+  top: 50%; left:50%; transform: translate(-50%, -50%); color:#CA2000;
+  font-size: 70px; font-weight: 800; line-height: 1.3em;
   position: absolute;
-  left: 21%; 
-  right: 21%;
 }
 .Benefits{
-  text-align: center;
-  padding: 100px;
-  color: #fcaf3b;
-  font-family: Poppins;
+  padding: none !important;
+  color: #CA2000;
   font-size: 20px;
-  background-color: black;
+  height: 100vh;
+  background-color: white;
+  z-index: 1;
+  text-align: center;
+  
 }
 @media (max-width:768px){
   .Benefits{
     font-size: medium;
     line-height: 2em;
+    padding-left: none !important;
+  }
+  .centered{
+    text-align: left;
+    font-size: 60px;
   }
 }
 
@@ -112,7 +70,6 @@
   margin: auto;
   border: 10px;
   background-color: white;
- 
 }
 .squareright{
   padding-top: 10%;
@@ -120,20 +77,50 @@
   font-size: x-large;
   height: 550px;
   text-align: center;
-  font-family: Poppins;
 }
 .full{
-  background-color: black;
+  background-color: rgb(29, 29, 29);
 }
 .footer{
-  background-color: black;
-  font-family: Poppins;
-  color: #fcaf3b;
-  padding: 5%;
+  background-color: rgb(29, 29, 29);
+  color: #CA2000;
+  padding: 2%;
 }
 .form{
-  background-color: black;
-  color: #fcaf3b;
+  background-color: rgb(29, 29, 29);
+  color: #CA2000;
   margin: 10%;
+}
+.svg-container{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.svgrotate{
+  animation: rotate 6s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+  margin-top: 10%;
+}
+#sup, #halter, #salad, #clock{
+  animation: antirotate 6s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes rotate{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes antirotate{
+  from{
+    transform: rotateZ(360deg);
+  }
+  to{
+    transform: rotateZ(0deg);
+  }
 }
 

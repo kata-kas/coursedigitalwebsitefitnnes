@@ -1,21 +1,24 @@
 import '../App.css';
-import banner from '../assets/banner.webp';
+import banner from '../assets/banner.jpg';
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
-
+import Header from './Header';
+import clip from './video.mp4'; 
 function Banner(){
     return (
-         <div className="App">
-        <div className="Container">
-        <img src={banner} className="App-banner" alt="NOSS Banner"/>
+         <div className="App"><video autoPlay loop muted id="background-video">
+            <source src={clip} type='video/mp4' />
+    </video>
+        <div className="Container" style={{height:'100vh'}}>
+        <Header/>
         <div className="centered">
-          Noi te putem ajuta să fii în formă maximă! 
-          <br></br> </div>
-          <div className="centered2">
+          Noi te ajutăm să fii în formă maximă! 
+          <br/>
+          <br/>
           <Link to="/despre-noi">
-          <Button variant="warning" buttonvariant="outline-dark" size="lg" className="Btn">
+         <span>
           AFLĂ CUM!
-          </Button></Link>
+          </span></Link>
          </div>
       </div>
       </div>

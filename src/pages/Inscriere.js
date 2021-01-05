@@ -4,10 +4,12 @@ import NetlifyForm from 'react-ssg-netlify-forms'
 import {useHistory} from 'react-router-dom';
 import {useState} from 'react';
 
+
+
 function Inscriere(){
     let history=useHistory()
     const postSubmit = () => {
-        history.push('/felicitari')}
+        history.push('/plata')}
         const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value })
     const [formValues, setFormValues] = useState({
       name: '',
@@ -17,10 +19,10 @@ function Inscriere(){
     return(
         <div>
         <Header/>
-        <NetlifyForm 
+        <NetlifyForm className="product"
         formName="inscriere" formValues={formValues} postSubmit={postSubmit}>
         <div style={{
-            backgroundColor:'black', fontFamily:'Poppins', color:'#fcaf3b', padding:'10%', textAlign:'left'
+            backgroundColor:'rgb(29, 29, 29)', fontFamily:'Raleway', color:'#CA2000', padding:'10%', textAlign:'left'
         }}>
         <div>
           Nume Prenume: <input type="text" name="name" value={formValues.name} onChange={handleChange} required />
@@ -32,8 +34,9 @@ function Inscriere(){
           Nr Telefon:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="tel" name="tel" value={formValues.tel} onChange={handleChange} required />
         </div>
         <div>
-          <button type="submit" style={{
-              backgroundColor:'#fcaf3b'
+          <button
+          type="submit" style={{
+              backgroundColor:'#CA2000'
           }}>Trimite</button>
         </div>
         </div>

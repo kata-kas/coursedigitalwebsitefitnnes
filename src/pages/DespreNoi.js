@@ -3,9 +3,9 @@ import Footer from '../components/Footer';
 
 function DespreNoi(){
     return (
-        <div style={{backgroundColor:'black' }}>
+        <div style={{backgroundColor:'rgb(29, 29, 29)' }}>
         <Header/>
-        <div style={{ backgroundColor:'black', color:'#fcaf3b', fontFamily:'Poppins', 
+        <div style={{ backgroundColor:'rgb(29, 29, 29)', color:'#CA2000', fontFamily:'Raleway', 
         margin: '15%'
     }}>
         <h1>NOSS – Nutriție 🍽️, Odihnă 💤, Sport 🏋️, Suplimente ⚡</h1><br/>
