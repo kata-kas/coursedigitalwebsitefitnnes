@@ -5,7 +5,7 @@ import CourseCard from '../components/CourseCard';
 import Footer from '../components/Footer';
 import clip from '../components/video.mp4';
 import {Link} from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 function Home() {
   const variants = {
