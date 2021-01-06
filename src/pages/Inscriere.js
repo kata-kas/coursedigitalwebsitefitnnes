@@ -3,8 +3,7 @@ import Footer from '../components/Footer';
 import NetlifyForm from 'react-ssg-netlify-forms'
 import {useHistory} from 'react-router-dom';
 import {useState} from 'react';
-
-
+import { motion } from 'framer-motion'
 
 function Inscriere(){
     let history=useHistory()
@@ -17,32 +16,40 @@ function Inscriere(){
       tel: ''
     })
     return(
-        <div>
+        <motion.div  className="css-selector"
+        style={{ backgroundColor:'rgb(29, 29, 29)', fontFamily:'Raleway', color:'#CA2000',fontWeight:'500', textAlign:'center', paddingTop:'10rem', 
+      }} >
         <Header/>
+        <h1>Inscriere</h1>
         <NetlifyForm className="product"
         formName="inscriere" formValues={formValues} postSubmit={postSubmit}>
         <div style={{
-            backgroundColor:'rgb(29, 29, 29)', fontFamily:'Raleway', color:'#CA2000', padding:'10%', textAlign:'left'
+           textAlign:'center', height:'100vh', paddingTop:'5rem', 
         }}>
         <div>
-          Nume Prenume: <input type="text" name="name" value={formValues.name} onChange={handleChange} required />
+          Nume Prenume: <br/> <input type="text" name="name" value={formValues.name} onChange={handleChange} required />
         </div>
         <div>
-          Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" name="email" value={formValues.email} onChange={handleChange} required />
+          Email: <br/><input type="email" name="email" value={formValues.email} onChange={handleChange} required />
         </div>
         <div>
-          Nr Telefon:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="tel" name="tel" value={formValues.tel} onChange={handleChange} required />
+          Nr Telefon:<br/><input type="tel" name="tel" value={formValues.tel} onChange={handleChange} required />
         </div>
+        <div>
+          <input type="checkbox" required/> Sunt deacord cu <br/> Termenii si conditiile
+        </div>
+        <br/>
+        <br/>
         <div>
           <button
-          type="submit" style={{
-              backgroundColor:'#CA2000'
+          type="submit" className="Btn"style={{
+              backgroundColor:'#CA2000', marginTop:'5%'
           }}>Trimite</button>
         </div>
         </div>
        </NetlifyForm>
         <Footer/>
-        </div>
+        </motion.div>
     );
 }
 

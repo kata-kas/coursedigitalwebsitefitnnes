@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 
 function DespreNoi(){
     return (
-        <div style={{backgroundColor:'rgb(29, 29, 29)' }}>
+        <div style={{backgroundColor:'rgb(29, 29, 29)', height:'100vh', position:'absolute'}}>
         <Header/>
         <div style={{ backgroundColor:'rgb(29, 29, 29)', color:'#CA2000', fontFamily:'Raleway', 
         margin: '15%'

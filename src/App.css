@@ -34,6 +34,14 @@
   min-height: 100%;
   filter: brightness(20%);
   }
+  .videostore{
+    height: 100vh;
+  }
+  #bun-venit{
+  object-fit: cover;
+  width: 100%; 
+  min-height: 100%;
+  }
 .App-logo {  height: 10vmin; margin-bottom: 10%; }
 
 .App-banner{  width: 100%; }
@@ -47,7 +55,7 @@
   color: #CA2000;
   font-size: 20px;
   height: 100vh;
-  background-color: white;
+  background-color: rgb(29, 29, 29);
   z-index: 1;
   text-align: center;
   
@@ -123,4 +131,39 @@
     transform: rotateZ(0deg);
   }
 }
+.css-selector {
+  background: linear-gradient(274deg, #731200, #000000, #931700);
+  background-size: 600% 600%;
 
+  -webkit-animation: AnimationName 21s ease infinite;
+  -moz-animation: AnimationName 21s ease infinite;
+  -o-animation: AnimationName 21s ease infinite;
+  animation: AnimationName 21s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 45%}
+  50%{background-position:100% 56%}
+  100%{background-position:0% 45%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 45%}
+  50%{background-position:100% 56%}
+  100%{background-position:0% 45%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 45%}
+  50%{background-position:100% 56%}
+  100%{background-position:0% 45%}
+}
+@keyframes AnimationName { 
+  0%{background-position:0% 45%}
+  50%{background-position:100% 56%}
+  100%{background-position:0% 45%}
+}
+.transparent{
+  background-color: transparent;
+}
+.white{
+  background-color:rgb(29, 29, 29);
+}

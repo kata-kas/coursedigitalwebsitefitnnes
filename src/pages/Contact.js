@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 function Contact() {
   return (
-    <div style={{backgroundColor:'rgb(29, 29, 29)'}}>
+    <div style={{backgroundColor:'rgb(29, 29, 29)', position:'fixed', width:'100%'}}>
     <Header/>
     <Form className="form">
   <Form.Row>

@@ -9,8 +9,10 @@ function Footer(){
         <div style={{backgroundColor:'rgb(29, 29, 29)'}}>
         <Container className="footer">
             <Row>
-                <Col><Link to="/termeni-si-conditii" style={{ textDecoration: 'none', color:"#CA2000" }}>Termenii și Condițiile</Link></Col>
-                <Col> <a href="https://www.facebook.com/NOSSLifestyle" target="blank" style={{textDecoration:'none'}}>
+                <Col><Link to="/termeni-si-conditii" style={{ textDecoration: 'none', color:"#CA2000", fontFamily:'Raleway',  }}>Termenii și Condiții</Link></Col>
+                <Col>
+                <div style={{float:'right'}}>
+                    <a href="https://www.facebook.com/NOSSLifestyle" target="blank" style={{textDecoration:'none'}}>
                     <FontAwesomeIcon icon={faFacebook} size="2x" color="#CA2000"/></a> &nbsp; &nbsp;
 
                         <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Flaurentiu_noss%3Figshid%3D1pjqqzjmmnkkw%26fbclid%3DIwAR0Xr_nPOuuyaQ_1mbw72FvsfDst924L7buJEYAdot2Sys8fENtU-q5V_9w&h=AT2Jdf_oSq8fqjILyBCXl8IxZnbwAdXPdYUoiIicYw_PFKSoQkpJIciIo5VPnKyD8XKA9-PLqEsDPBPH2O8CFaGBNzW53Eu0GARwXwELRi4lqLLfdmnWSJHPvxd337uTNB-GDnTClQ4" target="blank" style={{textDecoration:'none'}}>
@@ -18,6 +20,7 @@ function Footer(){
 
                     <a href="https://www.youtube.com/channel/UCHLllQ7P6WjGVdbuIvIXJew" target="blank" style={{textDecoration:'none'}}>
                     <FontAwesomeIcon icon={faYoutube} size="2x" color="#CA2000"/> </a> &nbsp;  &nbsp;    
+                </div> 
                 </Col>
             </Row>
             <Row>

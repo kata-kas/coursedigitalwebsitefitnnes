@@ -16,7 +16,8 @@ function Home() {
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}>
 
-     <div className="App"><video autoPlay loop muted id="background-video">
+     <div className="App">
+       <video autoPlay loop muted id="background-video">
       <source src='https://storage.googleapis.com/kreativio/video.mp4' type='video/mp4' />
     </video>
         <div className="Container" style={{height:'100vh'}}>
@@ -33,13 +34,18 @@ function Home() {
           <br/>
           </motion.div> 
           <div>
-          <Link to="/despre-noi" className="Btn">
+          <Link to="/despre-noi" className="Btn" style={{textDecoration:'none'}}>
           AFLĂ CUM!
           </Link></div>
           
       </div>
       </div>
     <Benefits/>
+    <section className="videostore">
+    <video preload="none" controls poster="https://storage.googleapis.com/kreativio/banner.jpg" id="bun-venit">
+      <source src='https://storage.googleapis.com/kreativio/Bun%20venit.mp4' type='video/mp4' />
+    </video>
+    </section>
     <CourseCard/>
     <Footer/>
     <script id="CookieDeclaration" src="https://consent.cookiebot.com/98f96dbb-884d-4981-bd1e-59204bc2e36a/cd.js" type="text/javascript" async></script>

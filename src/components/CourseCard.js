@@ -1,31 +1,46 @@
 import '../App.css';
-import {Card, Button, Col} from 'react-bootstrap';
-import coursecardimg from '../assets/cardcourse.png';
+import {Card} from 'react-bootstrap';
 import React from 'react';
 import {Link} from 'react-router-dom';
 
 function CourseCard () {
     return (
         <div className="full" >
-        <Card border="danger" style={{ width: 'auto',  marginLeft:'10%', marginRight:'10%' }}>
-        <Card.Img variant="top" src={coursecardimg} alt="Curs Fittnes pentru un stil de viață sănătos"/>
+        <Card style={{ width: 'auto', backgroundColor:'rgb(29, 29, 29)', color:' #CA2000' }}>
         <Card.Body>
+        <video preload="none" controls poster="https://storage.googleapis.com/kreativio/cardcourse.png" id="bun-venit">
+      <source src='https://storage.googleapis.com/kreativio/Instructiuni.mp4' type='video/mp4' />
+    </video>
         <Card.Title style={{textAlign: 'left', fontFamily:'Raleway',
         margin:'10%'}}><strong> Curs "Fitness pentru un stil de viață sănătos"</strong></Card.Title>
         <Card.Text style={{textAlign: 'left', lineHeight:'20px', margin:'10%', fontWeight:'bold'}}>
-                     20 Noiembrie 2020<br/>
-                     30 zile
+                     18 Ianuarie 2021<br/>
+                     30 zile<br/>
                     200 RON<br/><br/>
                     <Link to="/curs-fitness-pentru-incepatori"
-                    style={{textDecoration: 'none', color: 'rgb(29, 29, 29)', fontFamily:'Raleway', fontSize:'20px',
+                    style={{textDecoration: 'none', color: ' #CA2000', fontFamily:'Raleway', fontSize:'20px',
                   }}
                     >Detalii</Link>
         </Card.Text>
         <div >
         <Link to="/inscriere">
-        <Button as={Col} variant="danger"
-        style={{color: 'rgb(29, 29, 29)', fontFamily:'Raleway', fontSize:'20px',
-       }}>Înscrie-te</Button>
+        <div style={{
+          bottom: '2%',
+          left:'50%',  transform: 'translate( -50%, 0%)',
+          width: '150px',
+          height: '50px',
+          fontSize: '18px',
+          fontWeight: '900',
+          textTransform: 'uppercase',
+          textAlign: 'center',
+          backgroundColor: '#CA2000',
+          color: 'white',
+          padding: '1%',
+          borderRadius: '1%',
+          position: 'absolute',
+        }}
+      
+       >Înscrie-te</div>
        </Link>
         </div> 
        </Card.Body>

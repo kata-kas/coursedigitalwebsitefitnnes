@@ -9,8 +9,7 @@ function Benefits(){
     return(
         <div className="Benefits">
         <section className="benefits" style={{
-            height:'100%',
-            border:'solid 1px red', 
+            height:'100%'
         }}>
            <motion.h1 style={{position:'absolute', left:'50%', transform: 'translate( -50%)'}}
            animate={{fontWeight:900}} transition={{duration:10,  ease:'linear'}}>
