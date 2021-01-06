@@ -8,7 +8,7 @@ function CourseCard () {
         <div className="full" >
         <Card style={{ width: 'auto', backgroundColor:'rgb(29, 29, 29)', color:' #CA2000' }}>
         <Card.Body>
-        <video preload="none" controls poster="https://storage.googleapis.com/kreativio/cardcourse.png" id="bun-venit">
+        <video preload="none" controls poster="https://storage.googleapis.com/kreativio/banner2.png" id="bun-venit">
       <source src='https://storage.googleapis.com/kreativio/Instructiuni.mp4' type='video/mp4' />
     </video>
         <Card.Title style={{textAlign: 'left', fontFamily:'Raleway',

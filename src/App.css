@@ -5,7 +5,6 @@
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 .Btn{
   top: 80%;
@@ -88,6 +87,7 @@
 }
 .full{
   background-color: rgb(29, 29, 29);
+  padding-bottom: 5rem;
 }
 .footer{
   background-color: rgb(29, 29, 29);
