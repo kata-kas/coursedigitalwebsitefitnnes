@@ -20,10 +20,7 @@ function CourseCard() {
             poster="https://evc59.pcloud.com/dpZ7Bq0C7ZAUeeskZUpv7ZZ4SkuG7Z3VZZfs0ZXZtE73tCnQawytSWn436IjFhTC3Pyy/th-2084030952-955x708.png"
             id="bun-venit"
           >
-            <source
-              src="https://storage.googleapis.com/kreativio/Instructiuni.mp4"
-              type="video/mp4"
-            />
+            <source src="#" type="video/mp4" />
           </video>
           <Card.Title
             style={{ textAlign: "left", fontFamily: "Raleway", margin: "10%" }}

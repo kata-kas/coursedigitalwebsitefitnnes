@@ -31,7 +31,7 @@ function Home() {
               autoPlay
               playsInline
               onCanPlayThrough={videoLoaded}
-              poster="https://storage.googleapis.com/kreativio/banner.jpg"
+              poster="https://evc68.pcloud.com/dpZW3U0C7ZbiKeskZUpv7ZZcukuG7Z3VZZfs0ZXZznsnMSfWt08IgaeqxnoCrFdASPh7/th-2084068618-1132x708.png"
               className={`${isVideoLoaded ? "show" : "hide"}`}
               id="background-video"
             >
