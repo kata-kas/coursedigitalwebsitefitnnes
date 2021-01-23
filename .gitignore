@@ -24,3 +24,6 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlifysrc/assets/bv.mp4
+
+# Local Netlify folder
+.netlify
