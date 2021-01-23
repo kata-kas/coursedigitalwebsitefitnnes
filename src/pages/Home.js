@@ -35,10 +35,7 @@ function Home() {
               className={`${isVideoLoaded ? "show" : "hide"}`}
               id="background-video"
             >
-              <source
-                src="https://edef3.pcloud.com/cBZ7pe0C7ZKBJeskZZZXQkuG7ZQ5ZZfs0ZkZHQABZSZMZ57ZUZmZwZR7Zy7ZH7Zm7ZvZlZrZWZLGo7Z70aEjzEWhijtN3JHzEURXFiT8SKk/Hero.mp4"
-                type="video/mp4"
-              />
+              <source src="../assets/Hero.mp4" type="video/mp4" />
             </video>
           )}
         </div>
