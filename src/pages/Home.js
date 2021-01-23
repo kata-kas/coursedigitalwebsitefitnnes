@@ -5,51 +5,32 @@ import CourseCard from "../components/CourseCard";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Hero from "../assets/Hero.mp4";
 import Banner from "../assets/banner.jpg";
 import Banner2 from "../assets/banner2.png";
 import Bv from "../assets/bv.mp4";
-
 function Home() {
-  const [allowVideo, setAllowVideo] = useState(false);
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
-  useEffect(() => {
-    setAllowVideo(true);
-  }, []);
-
-  const videoLoaded = () => {
-    setIsVideoLoaded(true);
-  };
-  const variants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
   return (
     <motion.div>
       <div className="App">
         <div>
-          {allowVideo && (
-            <video
-              muted
-              loop
-              autoPlay
-              playsInline
-              onCanPlayThrough={videoLoaded}
-              poster={Banner}
-              className={`${isVideoLoaded ? "show" : "hide"}`}
-              id="background-video"
-            >
-              <source src={Hero} type="video/mp4" />
-            </video>
-          )}
+          <video
+            muted
+            loop
+            autoPlay
+            playsInline
+            poster={Banner}
+            id="background-video"
+          >
+            <source src={Hero} type="video/mp4" />
+          </video>
         </div>
         <div className="Container" style={{ height: "100vh" }}>
           <Header />
           <motion.div
             initial="hidden"
             animate="visible"
-            variants={variants}
             transition={{ duration: 5 }}
             style={{
               position: "absolute",
@@ -82,19 +63,16 @@ function Home() {
       </div>
       <Benefits />
       <div className="videostore">
-        {allowVideo && (
-          <video
-            controls
-            autoPlay
-            playsInline
-            onCanPlayThrough={videoLoaded}
-            className={`${isVideoLoaded ? "show" : "hide"}`}
-            poster={Banner2}
-            id="bun-venit"
-          >
-            <source src={Bv} type="video/mp4" />
-          </video>
-        )}
+        <video
+          controls
+          preload="none"
+          autoPlay
+          playsInline
+          poster={Banner2}
+          id="bun-venit"
+        >
+          <source src={Bv} type="video/mp4" />
+        </video>
       </div>
       <CourseCard />
       <Footer />
