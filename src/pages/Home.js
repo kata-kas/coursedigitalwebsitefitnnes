@@ -6,8 +6,10 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
+import Hero from "../assets/Hero.mp4";
 import Banner from "../assets/banner.jpg";
 import Banner2 from "../assets/banner2.png";
+import Bv from "../assets/bv.mp4";
 
 function Home() {
   const [allowVideo, setAllowVideo] = useState(false);
@@ -38,7 +40,7 @@ function Home() {
               className={`${isVideoLoaded ? "show" : "hide"}`}
               id="background-video"
             >
-              <source src="static/media/hero.44eda1e4.mp4" type="video/mp4" />
+              <source src={Hero} type="video/mp4" />
             </video>
           )}
         </div>
@@ -90,7 +92,7 @@ function Home() {
             poster={Banner2}
             id="bun-venit"
           >
-            <source src="static/media/bv.46b8d0b1.mp4" type="video/mp4" />
+            <source src={Bv} type="video/mp4" />
           </video>
         )}
       </div>
