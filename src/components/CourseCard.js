@@ -2,7 +2,8 @@ import "../App.css";
 import { Card } from "react-bootstrap";
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Instr from "../assets/instr.mp4";
+import Banner2 from "../assets/banner2.png";
 function CourseCard() {
   return (
     <div className="full">
@@ -14,13 +15,8 @@ function CourseCard() {
         }}
       >
         <Card.Body>
-          <video
-            preload="none"
-            controls
-            poster="https://evc59.pcloud.com/dpZ7Bq0C7ZAUeeskZUpv7ZZ4SkuG7Z3VZZfs0ZXZtE73tCnQawytSWn436IjFhTC3Pyy/th-2084030952-955x708.png"
-            id="bun-venit"
-          >
-            <source src="#" type="video/mp4" />
+          <video preload="none" controls poster={Banner2} id="bun-venit">
+            <source src={Instr} type="video/mp4" />
           </video>
           <Card.Title
             style={{ textAlign: "left", fontFamily: "Raleway", margin: "10%" }}

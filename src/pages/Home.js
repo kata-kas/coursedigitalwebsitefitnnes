@@ -8,6 +8,9 @@ import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import Hero from "../assets/Hero.mp4";
 import Banner from "../assets/banner.jpg";
+import Banner2 from "../assets/banner2.png";
+import Bv from "../assets/bv.mp4";
+
 function Home() {
   const [allowVideo, setAllowVideo] = useState(false);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
@@ -86,13 +89,10 @@ function Home() {
             playsInline
             onCanPlayThrough={videoLoaded}
             className={`${isVideoLoaded ? "show" : "hide"}`}
-            poster="https://evc59.pcloud.com/dpZ7Bq0C7ZAUeeskZUpv7ZZ4SkuG7Z3VZZfs0ZXZtE73tCnQawytSWn436IjFhTC3Pyy/th-2084030952-955x708.png"
+            poster={Banner2}
             id="bun-venit"
           >
-            <source
-              src="https://edef3.pcloud.com/cBZCVM0C7ZqLHeskZZZymkuG7ZQ5ZZfs0ZkZaaH5kZuZxZJ7ZNZy7ZvZL7ZiZhZp7Z2ZKZeZb7Z2Go7ZENyDc5kJg1plydLLixS6Nhi9bdNV/bv.mp4"
-              type="video/mp4"
-            />
+            <source src={Bv} type="video/mp4" />
           </video>
         )}
       </div>
