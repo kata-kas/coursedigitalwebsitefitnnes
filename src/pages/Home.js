@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
+import Hero from "../assets/Hero.mp4";
+import Banner from "../assets/banner.jpg";
 function Home() {
   const [allowVideo, setAllowVideo] = useState(false);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
@@ -31,11 +33,11 @@ function Home() {
               autoPlay
               playsInline
               onCanPlayThrough={videoLoaded}
-              poster="https://evc68.pcloud.com/dpZW3U0C7ZbiKeskZUpv7ZZcukuG7Z3VZZfs0ZXZznsnMSfWt08IgaeqxnoCrFdASPh7/th-2084068618-1132x708.png"
+              poster={Banner}
               className={`${isVideoLoaded ? "show" : "hide"}`}
               id="background-video"
             >
-              <source src="../assets/Hero.mp4" type="video/mp4" />
+              <source src={Hero} type="video/mp4" />
             </video>
           )}
         </div>
